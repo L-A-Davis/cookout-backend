@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'thin'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,6 +31,7 @@ gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth', '~> 1.8', '>= 1.8.1'
 
+gem "bcrypt-ruby", :require => "bcrypt"
 
 gem 'rack-cors', :require => 'rack/cors'
 # Use Redis adapter to run Action Cable in production

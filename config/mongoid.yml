@@ -12,8 +12,8 @@ development:
         - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
-        write:
-          w: 1
+        # write:
+        #   w: 1
 
         # Change the default read preference. Valid options for mode are: :secondary,
         # :secondary_preferred, :primary, :primary_preferred, :nearest
@@ -24,10 +24,10 @@ development:
         #     - use: web
 
         # The name of the user for authentication.
-        user: 'user'
+        # user: 'user'
 
         # The password of the user for authentication.
-        password: 'password'
+        # password: 'password'
 
         # The user's database roles.
         # roles:

@@ -20,6 +20,7 @@ module CookoutBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    config.mongoid.logger = Logger.new($stdout, :warn)
     config.filter_parameters += [:password, :password_confirmation]
 
     config.middleware.insert_before 0, Rack::Cors do
